@@ -1,14 +1,13 @@
-*{margin: 0;padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body{
+body {
   background-color: #F1F1F1;
 }
 
-
-
-
-
-.nav-main{
+.nav-main {
   position: fixed;
   left: 0;
   top: 0;
@@ -21,7 +20,7 @@ body{
   z-index: 1000;
 }
 
-.btn-toggle-nav{
+.btn-toggle-nav {
   width: 60px;
   height: 100%;
   padding: 0;
@@ -33,44 +32,39 @@ body{
   cursor: pointer;
 }
 
-.btn-toggle-nav:hover{
-opacity: 0.5;
+.btn-toggle-nav:hover {
+  opacity: 0.5;
 }
 
-.nav-main ul{
+.nav-main ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   height: 100%;
 }
 
-.nav-main ul li{
+.nav-main ul li {
   list-style: none;
   line-height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-
-
-.nav-main ul li a{
-display: block;
-padding: 22px 30px;
-text-transform: uppercase;
-text-decoration: none;
-color:#111;
-font-family: arial;
-font-size: 16px;
-white-space: nowrap;
-
+.nav-main ul li a {
+  display: block;
+  padding: 22px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  font-family: arial;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 .nav-main ul li:hover {
-background-color: #66ccff;
+  background-color: #66ccff;
 }
 
-
-
-.nav-sidebar{
+.nav-sidebar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -80,128 +74,142 @@ background-color: #66ccff;
   background-color: #1b1b1b;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
-
 }
 
-.nav-sidebar ul{
-padding: 0 5px;
-overflow: hidden;
-visibility: hidden;
+.nav-sidebar ul {
+  padding: 0 5px;
+  overflow: hidden;
+  visibility: hidden;
 }
 
-.nav-sidebar ul li{
-line-height: 60px;
-list-style: none;
+.nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
 }
 
-.nav-sidebar ul li span, .nav-sidebar ul li a{
-display: block;
-height: 60px;
-padding: 0 5px;
-text-decoration: none;
-text-transform: uppercase;;
-color: #FFF;
-font-family: arial;
-font-size: 16px;
-white-space: nowrap;
-transition: all 0.3s ease-in-out;
-opacity: 0;
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  ;
+  color: #FFF;
+  font-family: arial;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .nav-sidebar ul li a:hover {
-background-color: #66ccff;
+  background-color: #66ccff;
 }
 
-
-
-
-
-
-
-.ace-card{
+.card {
   display: block;
-
-
   width: 800px;
-
   margin: 90px auto;
-
 }
 
-
-
-.ace-card h1 {
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-top: 33px;
-    margin-bottom: 11px;
+.card h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 11px;
 }
 
-.ace-card-inner {
+.card h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 
-
-
-      display: block;
-      box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+.card-inner {
+  display: block;
+  box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
   width: 100%;
-      margin:90px auto;
-      padding: 60px 40px;
-        text-align: center;
-
+  margin: 40px auto;
+  padding: 60px 40px;
 }
 
-
-
-.ace-social {
+.card-social {
   margin: 22px -15px 0 45px;
   font-size: 20px;
 }
 
-.ace-social li {
+.main {
+  text-align: center;
+}
+
+.main li {
   margin: 5px 12px;
   display: inline-block;
   vertical-align: middle;
 }
 
-.ace-social a {
+.main li a {
   text-decoration: none;
 }
 
-.ace-social a:hover {
-  opacity: 0.7;
+.container {
+  background: white;
+  margin: 0 auto;
 }
 
-
-
-.text-muted {
-    color: #757575;
+.container .pic {
+  width: 390px;
+  height: 380px;
+  background: white;
+  position: relative;
+  top: 0;
+  transition: all 0.25s;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 5px;
 }
 
-
-
-
-
-
-.text-upper {
-  text-transform: uppercase;
+.container .pic:hover {
+  top: -10px;
+  box-shadow: 5px 8px 5px #333;
 }
 
+.review {
+  height: 72px;
+  font-size: 14px;
+  line-height: 72px;
+  margin: 0 28px 8px;
+}
 
-.aboutme{
+.author {
+  height: 18px;
+  font-size: 12px;
+  margin: 0 28px 8px;
+}
 
+.div1 {
   display: block;
+  width: 268px;
+  margin: 0 auto;
   box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
-width: 80%;
-  margin:90px auto;
-  padding: 60px 15%;
-
 }
 
+.button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-size: 40px;
+}
 
+.input1 {
+  width: 260px;
+  font-size: 20px;
+}
 
-.title-lg {
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 50px;
+.input2 {
+  width: 260px;
+  font-size: 40px;
 }
